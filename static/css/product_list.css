@@ -1,0 +1,160 @@
+/* product_list.css */
+
+body {
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2.text-center {
+    font-size: 2.5rem; /* Aumentar tamaño de la fuente */
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #28a745;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    animation: slide-in 1s ease-out;
+  }
+  
+  h2.text-center::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #28a745;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  .table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thead-dark {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table thead th {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border-bottom: 2px solid #343a40;
+  }
+  
+  .table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .product-row {
+    transition: transform 0.2s ease;
+  }
+  
+  .product-row:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary, .btn-danger {
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
